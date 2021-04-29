@@ -5,7 +5,7 @@ import createEmotionServer from "@emotion/server/create-instance";
 import { cache } from "./_app";
 
 const { extractCritical } = createEmotionServer(cache);
-cache.compat = undefined;
+// cache.compat = undefined;
 
 export default class MyDocument extends Document {
   render() {

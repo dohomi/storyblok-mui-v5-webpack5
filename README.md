@@ -6,5 +6,8 @@ npm run i
 npm run storybook
 ```
 
-### Current Bug
-Bar of the LinearProgress should be black not blue
+### Storybook Notes
+Make sure to add webpack config to ensure right theme
+
+### NextJS Notes
+Don't add your own @emotion/cache version inside of package.json otherwise it leads to wrong theme
