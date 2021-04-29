@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Head, Html, Main, NextScript } from 'next/document'
 import { ServerStyleSheets } from '@material-ui/core/styles'
 import createEmotionServer from '@emotion/server/create-instance'
 import theme from '../components/theme/theme'
@@ -16,8 +16,8 @@ export default class MyDocument extends Document {
           <meta name="theme-color" content={theme.palette.primary.main} />
         </Head>
         <body>
-          <Main />
-          <NextScript />
+        <Main />
+        <NextScript />
         </body>
       </Html>
     )
