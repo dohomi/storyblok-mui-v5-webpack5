@@ -5,7 +5,10 @@ module.exports = {
     builder: 'webpack5'
   },
   stories: ['../components/**/*.stories.@(ts|tsx|mdx)'],
-  addons: ['@storybook/addon-essentials', '@storybook/builder-webpack5'],
+  addons: [
+    '@storybook/addon-essentials',
+    '@storybook/builder-webpack5'
+  ],
   webpackFinal: async (config, {configType}) => {
     const fileLoaderRule = config.module.rules.find(rule => rule.test && rule.test.test('.svg'))
     fileLoaderRule.exclude = /\.svg$/

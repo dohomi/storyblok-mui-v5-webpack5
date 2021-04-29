@@ -1,6 +1,4 @@
 import * as NextImage from 'next/image'
-import LmThemeProvider from '../components/theme/LmThemeProvider'
-import { withNextRouter } from 'storybook-addon-next-router'
 
 const OriginalNextImage = NextImage.default
 Object.defineProperty(NextImage, 'default', {
@@ -25,15 +23,5 @@ export const parameters = {
     }
   }
 }
-
-
-const withRootProvider = (Story) => (
-  <LmThemeProvider>
-    <Story />
-  </LmThemeProvider>
-)
-
-
-export const decorators = [withNextRouter, withRootProvider]
 
 
