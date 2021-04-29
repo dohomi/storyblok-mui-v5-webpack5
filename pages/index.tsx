@@ -1,10 +1,14 @@
-import { Box, LinearProgress } from '@material-ui/core'
+import { Box, Typography, useTheme, LinearProgress } from "@material-ui/core";
 
-const Page = () => (
-  <div>
-    <Box padding={3}>
-      <LinearProgress variant={'determinate'} value={50} />
+const Home = () => {
+  const theme = useTheme();
+  return (
+    <Box sx={{ m: 2 }}>
+      <Typography>theme.palette.mode: {theme.palette.mode}</Typography>
+      <br /> <br />
+      <LinearProgress variant="determinate" value={50} />
     </Box>
-  </div>
-)
-export default Page
+  );
+};
+
+export default Home;
